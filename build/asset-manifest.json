@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06bfd411.chunk.css",
+    "main.js": "/static/js/main.d27cc7b3.chunk.js",
+    "main.js.map": "/static/js/main.d27cc7b3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.765c3509.js",
+    "runtime-main.js.map": "/static/js/runtime-main.765c3509.js.map",
+    "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
+    "static/js/2.f1435ea8.chunk.js": "/static/js/2.f1435ea8.chunk.js",
+    "static/js/2.f1435ea8.chunk.js.map": "/static/js/2.f1435ea8.chunk.js.map",
+    "static/js/3.547ca076.chunk.js": "/static/js/3.547ca076.chunk.js",
+    "static/js/3.547ca076.chunk.js.map": "/static/js/3.547ca076.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
+    "static/css/main.06bfd411.chunk.css.map": "/static/css/main.06bfd411.chunk.css.map",
+    "static/js/2.f1435ea8.chunk.js.LICENSE.txt": "/static/js/2.f1435ea8.chunk.js.LICENSE.txt",
+    "static/media/elgeant-barber-salon.ffcc746d.webp": "/static/media/elgeant-barber-salon.ffcc746d.webp",
+    "static/media/logo01.f0f3765f.svg": "/static/media/logo01.f0f3765f.svg",
+    "static/media/logo02.ef3dc476.svg": "/static/media/logo02.ef3dc476.svg",
+    "static/media/logo03.ed39a486.svg": "/static/media/logo03.ed39a486.svg",
+    "static/media/logo04.d4601325.svg": "/static/media/logo04.d4601325.svg",
+    "static/media/logo05.e583f97d.svg": "/static/media/logo05.e583f97d.svg",
+    "static/media/logo06.7fcfefca.svg": "/static/media/logo06.7fcfefca.svg",
+    "static/media/man-shaving-procedure.2bcecade.jpg": "/static/media/man-shaving-procedure.2bcecade.jpg",
+    "static/media/project-1.b444751f.jpg": "/static/media/project-1.b444751f.jpg",
+    "static/media/project-2.39368f00.jpg": "/static/media/project-2.39368f00.jpg",
+    "static/media/project-3.dd780cd7.jpg": "/static/media/project-3.dd780cd7.jpg",
+    "static/media/project-4.38edc406.jpg": "/static/media/project-4.38edc406.jpg",
+    "static/media/project-5.fb2a0f74.jpg": "/static/media/project-5.fb2a0f74.jpg",
+    "static/media/project-6.ff8b3657.jpg": "/static/media/project-6.ff8b3657.jpg",
+    "static/media/reach-us-map.f848fa68.png": "/static/media/reach-us-map.f848fa68.png",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.765c3509.js",
+    "static/css/2.19627560.chunk.css",
+    "static/js/2.f1435ea8.chunk.js",
+    "static/css/main.06bfd411.chunk.css",
+    "static/js/main.d27cc7b3.chunk.js"
+  ]
+}
