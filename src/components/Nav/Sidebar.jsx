@@ -12,7 +12,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         <div className="flexNullCenter">
           <LogoIcon />
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            ELEGANT SALON
+            ELEGANT BARBER SALON
           </h1>
         </div>
         <CloseBtn
@@ -49,7 +49,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Services
+            Features
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -77,7 +77,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Blog
+            Testimonials
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -89,7 +89,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             to="pricing"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-20}
           >
             Pricing
           </Link>
@@ -100,12 +100,12 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="contact"
+            to="map"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Contact
+            Find Us
           </Link>
         </li>
       </UlStyle>

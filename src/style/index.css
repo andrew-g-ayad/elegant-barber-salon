@@ -135,9 +135,12 @@ body {
   background: #3e3e3e;
   color: #0b093b;
   font-family: "Khula", sans-serif;
-  overflow-x: hidden;
   font-size: 24px;
   font-weight: 400;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 .container {
   width: 100%;
@@ -357,4 +360,16 @@ body {
 }
 .whiteBg {
   background-color: #fff;
+}
+.map {
+  display: block;
+  overflow: hidden;
+  max-height: 500px;
+}
+.map img {
+  margin-top: -27%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center center;
+  width: 100%;
 }

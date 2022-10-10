@@ -77,8 +77,4 @@ const SubtitleStyle = styled.p`
   font-size: 1.15rem;
   margin: 0 auto;
   line-height: 1.4rem;
-  @media (max-width: 860px) {
-    font-size: 1.15rem;
-    margin: 0 auto;
-  }
 `;

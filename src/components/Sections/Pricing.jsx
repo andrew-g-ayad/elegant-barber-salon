@@ -13,7 +13,7 @@ export default function Pricing() {
         <div className="container whiteColor">
           <HeaderInfo>
             <h1 className="font40 ">Check Our Pricing</h1>
-            <p className="font13">
+            <p className="font20 lh1">
               Since 2020, we’ve offered a wide range of services and products to
               give you the elegant and fabulous look that you deserve.
             </p>
@@ -32,7 +32,33 @@ export default function Pricing() {
                 icon="face-shave"
                 price="$20"
                 title="Face Shave"
-                text="Simply Safe, Clean, And Fast Shaving."
+                text="Simply Safe, Clean, And Fast Shaving. You Can Get it Now. "
+              />
+            </TableBox>
+            <TableBox>
+              <PricingTable
+                icon="hair-face"
+                price="$45"
+                title="Shave & Cut"
+                text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+              />
+            </TableBox>
+          </TablesWrapper>
+          <TablesWrapper className="flexSpaceNull">
+            <TableBox>
+              <PricingTable
+                icon="roller"
+                price="$25"
+                title="Haircut"
+                text="Choose from 10s of Awesome  Haircuts, And leave it on our professionals."
+              />
+            </TableBox>
+            <TableBox>
+              <PricingTable
+                icon="face-shave"
+                price="$20"
+                title="Face Shave"
+                text="Simply Safe, Clean, And Fast Shaving. You Can Get it Now. "
               />
             </TableBox>
             <TableBox>
@@ -64,6 +90,7 @@ const Wrapper = styled.section`
 const HeaderInfo = styled.div`
   margin-top: 50px;
   margin-bottom: 90px;
+  text-align: center;
   @media (max-width: 860px) {
     text-align: center;
   }

@@ -97,7 +97,5 @@ const Wrapper = styled.section`
   padding: 60px 0px;
 `;
 const HeaderInfo = styled.div`
-  @media (max-width: 860px) {
-    text-align: center;
-  }
+  text-align: center;
 `;

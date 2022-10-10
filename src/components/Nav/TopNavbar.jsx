@@ -102,7 +102,7 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Blog
+                Testimonials
               </Link>
             </li>
             <li className="semiBold font15 pointer">
@@ -113,7 +113,7 @@ export default function TopNavbar() {
                 to="pricing"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-20}
               >
                 Pricing
               </Link>
@@ -123,12 +123,12 @@ export default function TopNavbar() {
                 className="whiteColor"
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
-                to="contact"
+                to="map"
                 spy={true}
                 smooth={true}
                 offset={-80}
               >
-                Contact
+                Find Us
               </Link>
             </li>
           </UlWrapper>

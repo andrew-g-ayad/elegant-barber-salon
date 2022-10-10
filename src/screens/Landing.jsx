@@ -15,9 +15,9 @@ export default function Landing() {
       <TopNavbar />
       <Header />
       <Services />
+      <Pricing />
       <Projects />
       <Blog />
-      <Pricing />
       <Footer />
     </>
   );

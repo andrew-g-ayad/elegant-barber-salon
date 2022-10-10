@@ -18,7 +18,7 @@ export default function Services() {
       <StyledDiv className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font60 extraBold">Why Us?</h1>
+            <h1 className="font60 extraBold">WHY US?</h1>
             <p className="font20 lh1">
               Here you can list all features you offer in your awesome Elegant
               Barber Shop to Your Clients.
@@ -76,63 +76,67 @@ export default function Services() {
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </Grid>
-      </StyledDiv>
-      <div className=" ">
-        <div className="container">
-          <Advertising className="flexSpaceCenter">
-            <AddLeft>
-              <h4 className="font15 semiBold">A few words about us</h4>
-              <h2 className="font40 extraBold">A Story of Creativity</h2>
-              <p className="font12">
-                Elegant Barber Salon is a premier Barber Shop and Salon in
-                between the heart of Koreatown and East Hollywood. Our barbers
-                have been serving the Los Angeles community for over 12 years.
-                Since 2020, we’ve offered a wide range of services and products
-                to give you the elegant and fabulous look that you deserve. Give
-                us a call to book an appointment or enjoy our walk-in services.
-                (Appointments Recommended).
-              </p>
-              <ButtonsRow
-                className="flexNullCenter"
-                style={{ margin: "30px auto" }}
-              >
-                <div style={{ width: "190px" }}>
-                  <FullButton
-                    title="Get Started"
-                    action={() => alert("clicked")}
-                  />
-                </div>
-              </ButtonsRow>
-            </AddLeft>
-            <AddRight>
-              <AddRightInner>
-                <div className="flexNullCenter">
-                  <AddImgWrapp1 className="flexCenter">
-                    <img src={AddImage1} alt="office" />
-                  </AddImgWrapp1>
-                  <AddImgWrapp2>
-                    <img src={AddImage2} alt="office" />
-                  </AddImgWrapp2>
-                </div>
-                <div className="flexNullCenter">
-                  <AddImgWrapp3>
-                    <img src={AddImage3} alt="office" />
-                  </AddImgWrapp3>
-                  <AddImgWrapp4>
-                    <img src={AddImage4} alt="office" />
-                  </AddImgWrapp4>
-                </div>
-              </AddRightInner>
-            </AddRight>
-          </Advertising>
+        <div className=" ">
+          <div className="container">
+            <Advertising className="flexSpaceCenter">
+              <AddLeft>
+                <h4 className="font15 semiBold">A few words about us</h4>
+                <h2 className="font40 extraBold">A Story of Creativity</h2>
+                <AboutParagraph>
+                  Elegant Barber Salon is a premier Barber Shop and Salon in
+                  between the heart of Koreatown and East Hollywood. Our barbers
+                  have been serving the Los Angeles community for over 12 years.
+                  Since 2020, we’ve offered a wide range of services and
+                  products to give you the elegant and fabulous look that you
+                  deserve. Give us a call to book an appointment or enjoy our
+                  walk-in services. (Appointments Recommended).
+                </AboutParagraph>
+                <ButtonsRow
+                  className="flexNullCenter"
+                  style={{ margin: "30px auto" }}
+                >
+                  <div style={{ width: "190px" }}>
+                    <FullButton
+                      title="Get Started"
+                      action={() => alert("clicked")}
+                    />
+                  </div>
+                </ButtonsRow>
+              </AddLeft>
+              <AddRight>
+                <AddRightInner>
+                  <div className="flexNullCenter">
+                    <AddImgWrapp1 className="flexCenter">
+                      <img src={AddImage1} alt="office" />
+                    </AddImgWrapp1>
+                    <AddImgWrapp2>
+                      <img src={AddImage2} alt="office" />
+                    </AddImgWrapp2>
+                  </div>
+                  <div className="flexNullCenter">
+                    <AddImgWrapp3>
+                      <img src={AddImage3} alt="office" />
+                    </AddImgWrapp3>
+                    <AddImgWrapp4>
+                      <img src={AddImage4} alt="office" />
+                    </AddImgWrapp4>
+                  </div>
+                </AddRightInner>
+              </AddRight>
+            </Advertising>
+          </div>
         </div>
-      </div>
+      </StyledDiv>
     </Wrapper>
   );
 }
 
+const AboutParagraph = styled.p`
+  font-size: 1.09rem;
+  line-height: 1.5rem;
+`;
 const StyledDiv = styled.div`
-  padding: 80px 0;
+  padding: 100px 0;
   margin: 0 auto;
   max-width: 1300px;
   @media (max-width: 860px) {
@@ -176,8 +180,6 @@ const HeaderInfo = styled.div`
   }
 `;
 const Advertising = styled.div`
-  margin: 80px 0;
-  padding: 100px 0;
   position: relative;
   @media (max-width: 1160px) {
     padding: 100px 0 40px 0;
@@ -214,7 +216,6 @@ const AddLeft = styled.div`
 const AddRight = styled.div`
   width: 50%;
   position: absolute;
-  top: -70px;
   right: 0;
   @media (max-width: 860px) {
     width: 80%;

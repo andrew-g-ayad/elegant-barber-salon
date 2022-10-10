@@ -1,0 +1,166 @@
+.myflex {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 80px;
+  height: 100vh;
+  overflow-y: hidden;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding-inline: 2rem;
+}
+.myflex .card {
+  max-width: 75%;
+  min-width: 290px;
+}
+.top-gradient {
+  --tw-gradient-from: #fafafa;
+  --tw-gradient-to: hsla(0, 0%, 0%, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  position: absolute;
+  height: 5rem;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  z-index: 1;
+}
+.bottom-gradient {
+  --tw-gradient-from: #fafafa;
+  --tw-gradient-to: hsla(0, 0%, 0%, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  position: absolute;
+  height: 5rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  z-index: 2;
+}
+/* Marquee styles */
+.marquee {
+  --gap: 1.2rem;
+  position: relative;
+  display: flex;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: var(--gap);
+  width: 100%;
+  text-align: center;
+
+  list-style: none;
+}
+p {
+  margin-block: 1rem;
+}
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+/* Pause animation when reduced-motion is set */
+/* @media (prefers-reduced-motion: reduce) {
+    .marquee__content {
+      animation-play-state: paused !important;
+    }
+  } */
+
+/* Enable animation */
+.enable-animation .marquee__content {
+  animation: scroll 90s linear infinite;
+}
+.enable-animation-slow.marquee__content {
+  animation: scroll 120s linear infinite;
+}
+
+/* Reverse animation */
+.marquee--reverse .marquee__content {
+  /*   animation-direction: reverse; */
+}
+
+/* Pause on hover */
+.marquee--hover-pause:hover .marquee__content {
+  animation-play-state: paused;
+}
+
+/* Attempt to size parent based on content. Keep in mind that the parent width is equal to both content containers that stretch to fill the parent. */
+.marquee--fit-content {
+  /* max-width: fit-content; */
+}
+
+/* A fit-content sizing fix: Absolute position the duplicate container. This will set the size of the parent wrapper to a single child container. Shout out to Olavi's article that had this solution 👏 @link: https://olavihaapala.fi/2021/02/23/modern-marquee.html  */
+.marquee--pos-absolute .marquee__content:last-child {
+  position: absolute;
+}
+
+/* Enable position absolute animation on the duplicate content (last-child) */
+.enable-animation .marquee--pos-absolute .marquee__content:last-child {
+  animation-name: scroll-abs;
+}
+.enable-animation {
+  background-color: #fafafa;
+  padding-block: 5rem;
+  box-shadow: 0px 1px 2px #ccc;
+}
+@keyframes scroll-abs {
+  from {
+    transform: translateY(calc(100% + var(--gap)));
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Other page demo styles */
+.marquee__content > * {
+  color: rgb(71, 71, 71);
+  background: white;
+  padding-block: 1em;
+  box-shadow: 0px 4px 5px -1px #ddd;
+  border-radius: 0.3rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.center {
+  margin-inline: auto;
+  /* max-width: 800px; */
+  text-align: center;
+}
+.center p {
+  color: #555;
+  font-weight: 450;
+  font-size: 1.2rem;
+}
+body,
+html {
+  background-color: #e1e1e1;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .card2 {
+    display: none;
+  }
+  .card3 {
+    display: none;
+  }
+}
+.section {
+  padding-block: 5em;
+  padding-inline: 1.5em;
+}
