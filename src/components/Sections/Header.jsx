@@ -23,7 +23,7 @@ export default function Header() {
             </h1>
             <HeaderP className="font40 semiBold">You are most welcomed</HeaderP>
             <BtnWrapper>
-              <FullButton border title="Get Started" to="services" />
+              <FullButton border title="Request an Appointment" to="services" />
             </BtnWrapper>
           </div>
         </LeftSide>

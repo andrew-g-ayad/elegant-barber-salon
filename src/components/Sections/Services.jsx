@@ -97,7 +97,7 @@ export default function Services() {
                 >
                   <div style={{ width: "190px" }}>
                     <FullButton
-                      title="Get Started"
+                      title="Request an Appointment"
                       action={() => alert("clicked")}
                     />
                   </div>
